@@ -81,12 +81,12 @@
 
    /* text */
    .footer-item.text-wrap {
-      padding: 1vw 2vw;
+      padding: 0.5vw 2vw;
    }
 
    .footer-text {
-      margin: 0.5vw 0;
-      font-size: 1.6vw;
+      margin: 0.3vw 0;
+      font-size: 1.4vw;
    }
 
    /* text */
