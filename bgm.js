@@ -1,11 +1,16 @@
 const audio = document.getElementById('audio');
 const toggleVolume = document.querySelector('.toggle-volume');
-
+var a = 0;
 audio.volume = 0.2;
 
-audio.onended = audio.play();
+if(a === 0) {
+   audio.addEventListener('play', audio.pause());
+}
+
+audio.addEventListener('ended', audio.play());
 
 toggleVolume.onclick = function() {
+   a += 1;
    if(toggleVolume.classList.contains('active')) {
       toggleVolume.innerHTML = '<i class="icon fas fa-volume-mute"></i>'
       toggleVolume.classList.remove('active');
