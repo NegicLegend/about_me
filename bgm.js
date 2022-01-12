@@ -17,3 +17,5 @@ toggleVolume.onclick = function() {
       audio.play();
    }
 }
+
+toggleVolume.click();
