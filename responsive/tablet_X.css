@@ -1,0 +1,109 @@
+@media screen and (orientation:landscape) and (min-height: 550px) and (max-height: 1099px) and (max-width: 1500px) {
+   html {
+      font-size: 8px;
+   }
+
+   .header-item-wrap {
+      margin-bottom: 1vw;
+   }
+
+   /* main */
+
+   /* toggle */
+   .toggle {
+      height: 5vw;
+   }
+
+   .toggle i {
+      font-size: 2.5vw;
+   }
+
+   /* toggle */
+
+   /* self */
+   .name {
+      font-size: 4vw;
+   }
+
+   .avt {
+      width: 15vw;
+      height: 15vw;
+      margin: 2vw auto;
+   }
+
+   .description {
+      font-size: 3vw;
+   }
+
+   /* header *//* header *//* header *//* header *//* header *//* header *//* header */
+
+   /* body *//* body *//* body *//* body *//* body *//* body *//* body *//* body */
+   .body {
+      margin-top: 5vh;
+   }
+
+   .link-wrap {
+      height: 8vw;
+      border-radius: 1vw;
+   }
+
+   .link-wrap + .link-wrap {
+      margin-top: 3vh;
+   }
+
+   .icon-link,
+   .icon-wrap.no-link {
+      width: 5vw;
+      height: 5vw;
+   }
+
+   .icon {
+      font-size: 3vw;
+   }
+
+   .link {
+      font-size: 3.5vw;
+   }
+
+   /* body *//* body *//* body *//* body *//* body *//* body *//* body *//* body */
+
+   /* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
+   .footer {
+      margin-top: 5vh;
+      height: 20vh;
+   }
+
+   .footer-item {
+      width: 50%;
+   }
+
+   /* main */
+
+   /* text */
+   .footer-item.text-wrap {
+      padding: 1vw 2vw;
+   }
+
+   .footer-text {
+      margin: 0.6vw 0;
+      font-size: 2vw;
+   }
+
+   /* text */
+
+   /* clock */
+   .footer-item.clock {
+      display: flex;
+      justify-content: end;
+      padding-right: 2vw;
+   }
+
+   .footer-item.clock p {
+      color: white;
+      font-size: 8vw;
+      margin: 0 1vw;
+      font-family: 'Teko', sans-serif;
+      font-weight: 500;
+      line-height: 20vh;
+   }
+}

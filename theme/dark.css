@@ -1,0 +1,364 @@
+body {
+   background-color: #111;
+   transition: 0.5s;
+}
+
+.toggle {
+   border: 1px solid white;
+   transition: 0.5s;
+}
+
+.toggle-volume.active:hover {
+   background-color: #b33939;
+}
+
+.toggle-volume.mute {
+   background-color: #b33939;
+}
+
+.toggle-volume.mute:hover {
+   background-color: #009432;
+}
+
+.toggle-theme:hover {
+   background-color: #d1ccc0;
+}
+
+.link,
+.description,
+.name,
+.icon,
+.toggle i {
+   color: white;
+   transition: 0.5s;
+}
+
+.avt,
+.link-wrap,
+.icon-wrap {
+   border: 0.2rem solid white;
+   transition: 0.5s;
+}
+
+/* main *//* main *//* main *//* main *//* main */
+
+/* link *//* link *//* link *//* link *//* link */
+
+/* facebook */
+.link-wrap.facebook:hover {
+   border: 0.2rem solid #2374e1;
+   box-shadow: 0 0 4rem 1rem #2374e1;
+}
+
+.link-wrap.facebook:hover .icon-wrap {
+   border: 0.2rem solid #2374e1;
+}
+
+.link-wrap.facebook:hover .icon {
+   color: #2374e1;
+}
+
+.link-wrap.facebook:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.facebook:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.facebook:hover .link {
+   color: #2374e1;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* facebook */
+
+/* github */
+.link-wrap.github:hover {
+   border: 0.2rem solid #f0f6fc;
+   box-shadow: 0 0 4rem 1rem #f0f6fc;
+}
+
+.link-wrap.github:hover .icon-wrap {
+   border: 0.2rem solid #f0f6fc;
+}
+
+.link-wrap.github:hover .icon {
+   color: #f0f6fc;
+}
+
+.link-wrap.github:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.github:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.github:hover .link {
+   color: #f0f6fc;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* github */
+
+/* youtube */
+.link-wrap.youtube:hover {
+   border: 0.2rem solid #ff0000;
+   box-shadow: 0 0 4rem 1rem #ff0000;
+}
+
+.link-wrap.youtube:hover .icon-wrap {
+   border: 0.2rem solid #ff0000;
+}
+
+.link-wrap.youtube:hover .icon {
+   color: #ff0000;
+}
+
+.link-wrap.youtube:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.youtube:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.youtube:hover .link {
+   color: #ff0000;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* youtube */
+
+/* twitter */
+.link-wrap.twitter:hover {
+   border: 0.2rem solid #1d9bf0;
+   box-shadow: 0 0 4rem 1rem #1d9bf0;
+}
+
+.link-wrap.twitter:hover .icon-wrap {
+   border: 0.2rem solid #1d9bf0;
+}
+
+.link-wrap.twitter:hover .icon {
+   color: #1d9bf0;
+}
+
+.link-wrap.twitter:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.twitter:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.twitter:hover .link {
+   color: #1d9bf0;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* twitter */
+
+/* twitch */
+.link-wrap.twitch:hover {
+   border: 0.2rem solid #9146ff;
+   box-shadow: 0 0 4rem 1rem #9146ff;
+}
+
+.link-wrap.twitch:hover .icon-wrap {
+   border: 0.2rem solid #9146ff;
+}
+
+.link-wrap.twitch:hover .icon {
+   color: #9146ff;
+}
+
+.link-wrap.twitch:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.twitch:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.twitch:hover .link {
+   color: #9146ff;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* twitch */
+
+/* codepen */
+.link-wrap.codepen:hover {
+   border: 0.2rem solid #ffffff;
+   box-shadow: 0 0 4rem 1rem #ffffff;
+}
+
+.link-wrap.codepen:hover .icon-wrap {
+   border: 0.2rem solid #ffffff;
+}
+
+.link-wrap.codepen:hover .icon {
+   color: #ffffff;
+}
+
+.link-wrap.codepen:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.codepen:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.codepen:hover .link {
+   color: #ffffff;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* codepen */
+
+/* reddit */
+.link-wrap.reddit:hover {
+   border: 0.2rem solid #ff4500;
+   box-shadow: 0 0 4rem 1rem #ff4500;
+}
+
+.link-wrap.reddit:hover .icon-wrap {
+   border: 0.2rem solid #ff4500;
+}
+
+.link-wrap.reddit:hover .icon {
+   color: #ff4500;
+}
+
+.link-wrap.reddit:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.reddit:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.reddit:hover .link {
+   color: #ff4500;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* reddit */
+
+/* steam */
+.link-wrap.steam:hover {
+   border: 0.2rem solid #003a5f;
+   box-shadow: 0 0 4rem 1rem #003a5f;
+}
+
+.link-wrap.steam:hover .icon-wrap {
+   border: 0.2rem solid #003a5f;
+}
+
+.link-wrap.steam:hover .icon {
+   color: #003a5f;
+}
+
+.link-wrap.steam:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.steam:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.steam:hover .link {
+   color: #003a5f;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* steam */
+
+/* email */
+.link-wrap.email:hover {
+   border: 0.2rem solid #dca505;
+   box-shadow: 0 0 4rem 1rem #dca505;
+}
+
+.link-wrap.email:hover .icon-wrap {
+   border: 0.2rem solid #dca505;
+}
+
+.link-wrap.email:hover .icon {
+   color: #dca505;
+}
+
+.link-wrap.email:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.email:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.email:hover .link {
+   color: #dca505;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* email */
+
+/* phone */
+.link-wrap.phone:hover {
+   border: 0.2rem solid #6bf268;
+   box-shadow: 0 0 4rem 1rem #6bf268;
+}
+
+.link-wrap.phone:hover .icon-wrap {
+   border: 0.2rem solid #6bf268;
+}
+
+.link-wrap.phone:hover .icon {
+   color: #6bf268;
+}
+
+.link-wrap.phone:hover .icon-wrap.no-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.phone:hover .icon-wrap.no-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.phone:hover .link {
+   color: #6bf268;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* phone */
+
+/* rick */
+.link-wrap.rick:hover {
+   border: 0.2rem solid #5f27cd;
+   box-shadow: 0 0 4rem 1rem #5f27cd;
+}
+
+.link-wrap.rick:hover .icon-wrap {
+   border: 0.2rem solid #5f27cd;
+}
+
+.link-wrap.rick:hover .icon {
+   color: #5f27cd;
+}
+
+.link-wrap.rick:hover .icon-wrap.no-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.rick:hover .icon-wrap.no-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.rick:hover .link {
+   color: #5f27cd;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* rick */

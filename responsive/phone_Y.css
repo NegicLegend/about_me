@@ -1,0 +1,96 @@
+@media screen and (orientation:portrait) and (max-width: 549px) {
+   html {
+      font-size: 5px;
+   }
+   
+   .header-item-wrap {
+      margin-bottom: 2vh;
+   }
+
+   .hide-on-mb {
+      display: none !important;
+   }
+
+   /* main */
+
+   /* toggle */
+
+   .toggle {
+      height: 10vw;
+   }
+
+   .toggle i {
+      font-size: 4vw;
+   }
+
+   /* toggle */
+
+   /* self */
+   .name {
+      font-size: 6.5vw;
+   }
+
+   .avt {
+      margin: 2vw auto;
+      width: 30vw;
+      height: 30vw;
+   }
+
+   .description {
+      font-size: 5vw;
+   }
+
+   /* header *//* header *//* header *//* header *//* header *//* header *//* header */
+   
+   /* body *//* body *//* body *//* body *//* body *//* body *//* body *//* body */
+   .body {
+      margin-top: 3vh;
+   }
+
+   .link-wrap {
+      height: 6vh;
+      border-radius: 0.5vw;
+   }
+
+   .link-wrap + .link-wrap {
+      margin-top: 3vh;
+   }
+
+   .icon-link,
+   .icon-wrap.no-link  {
+      width: 4vh;
+      height: 4vh;
+   }
+
+   .icon {
+      font-size: 2.2vh;
+   }
+
+   .link {
+      font-size: 2.5vh;
+   }
+
+   /* body *//* body *//* body *//* body *//* body *//* body *//* body *//* body */
+
+   /* footer *//* footer *//* footer *//* footer *//* footer *//* footer */
+   .footer {
+      margin-top: 5vh;
+      height: 15vh;
+   }
+
+   .footer-item {
+      width: 100%;
+   }
+
+   /* main */
+
+   /* text */
+   .footer-item.text-wrap {
+      padding: 2vh;
+   }
+
+   .footer-text {
+      margin: 1vh 0;
+      font-size: 2vh;
+   }
+}
