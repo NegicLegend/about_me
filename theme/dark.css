@@ -189,6 +189,35 @@ body {
 }
 /* twitch */
 
+/* cssbattle */
+.link-wrap.cssbattle:hover {
+   border: 0.2rem solid #ffdf00;
+   box-shadow: 0 0 4rem 1rem #ffdf00;
+}
+
+.link-wrap.cssbattle:hover .icon-wrap {
+   border: 0.2rem solid #ffdf00;
+}
+
+.link-wrap.cssbattle:hover .icon {
+   color: #ffdf00;
+}
+
+.link-wrap.cssbattle:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.cssbattle:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.cssbattle:hover .link {
+   color: #ffdf00;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* cssbattle */
+
 /* codepen */
 .link-wrap.codepen:hover {
    border: 0.2rem solid #ffffff;
