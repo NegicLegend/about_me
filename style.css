@@ -55,6 +55,7 @@ img {
    font-family: 'Kodchasan', sans-serif;
    font-weight: 600;
    letter-spacing: 0.3vw;
+   text-align: center;
 }
 
 .avt {
@@ -71,6 +72,7 @@ img {
    margin: 0 auto;
    font-family: 'Merienda', cursive;
    font-weight: 400;
+   text-align: center;
 }
 
 /* header *//* header *//* header *//* header *//* header *//* header *//* header */
