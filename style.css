@@ -138,6 +138,8 @@ img {
    top: 50%;
    transform: translate(-50%, -50%);
    transition: 0.2s linear;
+   text-align: center;
+   white-space: nowrap;
 }
 
 /* body *//* body *//* body *//* body *//* body *//* body *//* body *//* body */
