@@ -276,6 +276,35 @@ body {
 }
 /* reddit */
 
+/* pinterest */
+.link-wrap.pinterest:hover {
+   border: 0.2rem solid #e60023;
+   box-shadow: 0 0 4rem 1rem #e60023;
+}
+
+.link-wrap.pinterest:hover .icon-wrap {
+   border: 0.2rem solid #e60023;
+}
+
+.link-wrap.pinterest:hover .icon {
+   color: #e60023;
+}
+
+.link-wrap.pinterest:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.pinterest:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.pinterest:hover .link {
+   color: #e60023;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* pinterest */
+
 /* steam */
 .link-wrap.steam:hover {
    border: 0.2rem solid #003a5f;

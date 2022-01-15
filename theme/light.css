@@ -1210,6 +1210,148 @@ body {
 }
 /* reddit */
 
+/* pinterest */
+.link-wrap.pinterest:hover {
+   border: 0.2rem solid #e60023;
+}
+
+.link-wrap.pinterest:hover .icon {
+   color: #e60023;
+}
+
+.link-wrap.pinterest:hover .link {
+   color: #e60023;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+
+.link-wrap.pinterest:hover .icon-link {
+   transform: scale(0.75);
+}
+
+.link-wrap.pinterest:hover .icon-link::before {
+   border-left: 4px solid #e60023;
+   border-right: 4px solid #e60023;
+}
+
+.link-wrap.pinterest:hover .icon-link::after {
+   border-top: 4px solid #e60023;
+   border-bottom: 4px solid #e60023;
+}
+
+@media screen and (orientation:portrait) and (min-width: 1100px) {
+   /* desktop Y */
+   .link-wrap.pinterest:hover .icon-link::before {
+      border-left: 4px solid #e60023;
+      border-right: 4px solid #e60023;
+   }
+   
+   .link-wrap.pinterest:hover .icon-link::after {
+      border-top: 4px solid #e60023;
+      border-bottom: 4px solid #e60023;
+   }
+   /* desktop Y */
+}
+
+@media screen and (orientation:portrait) and (min-width: 550px) and (max-width: 1099px) {
+   /* tablet Y */
+   .link-wrap.pinterest:hover .icon-link::before {
+      border-left: 2px solid #e60023;
+      border-right: 2px solid #e60023;
+   }
+   
+   .link-wrap.pinterest:hover .icon-link::after {
+      border-top: 2px solid #e60023;
+      border-bottom: 2px solid #e60023;
+   }
+   /* tablet Y */
+}
+
+@media screen and (orientation:portrait) and (max-width: 549px) {
+   /* phone Y */
+   .link-wrap.pinterest:hover .icon-link::before {
+      border-left: 1px solid #e60023;
+      border-right: 1px solid #e60023;
+   }
+   
+   .link-wrap.pinterest:hover .icon-link::after {
+      border-top: 1px solid #e60023;
+      border-bottom: 1px solid #e60023;
+   }
+   /* phone Y */
+}
+
+@media screen and (orientation:landscape) and (min-width: 2500px) {
+   /* super desktop X */
+   .link-wrap.pinterest:hover .icon-link::before {
+      border-left: 8px solid #e60023;
+      border-right: 8px solid #e60023;
+   }
+   
+   .link-wrap.pinterest:hover .icon-link::after {
+      border-top: 8px solid #e60023;
+      border-bottom: 8px solid #e60023;
+   }
+   /* super desktop X */
+}
+
+@media screen and (orientation:landscape) and (min-width: 1800px) and (max-width: 2499px) {
+   /* desktop X */
+   .link-wrap.pinterest:hover .icon-link::before {
+      border-left: 6px solid #e60023;
+      border-right: 6px solid #e60023;
+   }
+   
+   .link-wrap.pinterest:hover .icon-link::after {
+      border-top: 6px solid #e60023;
+      border-bottom: 6px solid #e60023;
+   }
+   /* desktop X */
+}
+
+@media screen and (orientation:landscape) and (min-width: 1100px) and (max-width: 1799px) and (max-height: 999px) {
+   /* laptop X */
+   .link-wrap.pinterest:hover .icon-link::before {
+      border-left: 4px solid #e60023;
+      border-right: 4px solid #e60023;
+   }
+   
+   .link-wrap.pinterest:hover .icon-link::after {
+      border-top: 4px solid #e60023;
+      border-bottom: 4px solid #e60023;
+   }
+   /* laptop X */
+}
+
+@media screen and (orientation:landscape) and (min-height: 550px) and (max-height: 1099px) and (max-width: 1099px) {
+   /* tablet X */
+   .link-wrap.pinterest:hover .icon-link::before {
+      border-left: 4px solid #e60023;
+      border-right: 4px solid #e60023;
+   }
+   
+   .link-wrap.pinterest:hover .icon-link::after {
+      border-top: 4px solid #e60023;
+      border-bottom: 4px solid #e60023;
+   }
+   /* tablet X */
+}
+
+@media screen and (orientation:landscape) and (max-height: 549px) and (max-width: 1099px) {
+   /* phone X */
+   .link-wrap.pinterest:hover .icon-link::before {
+      border-left: 1px solid #e60023;
+      border-right: 1px solid #e60023;
+   }
+   
+   .link-wrap.pinterest:hover .icon-link::after {
+      border-top: 1px solid #e60023;
+      border-bottom: 1px solid #e60023;
+   }
+   /* phone X */
+}
+/* pinterest */
+
 /* steam */
 .link-wrap.steam:hover {
    border: 0.2rem solid #003a5f;
