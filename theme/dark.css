@@ -24,9 +24,38 @@ body {
    background-color: #d1ccc0;
 }
 
+.name {
+   color: #111;
+   -webkit-text-stroke: 0.02vw white;
+}
+
+.name::before {
+   color: white;
+   border-right: 2px solid white;
+   -webkit-text-stroke: 0vw white;
+   animation: grow 6s linear forwards, fadeOut 6s linear forwards;
+}
+
+@keyframes grow {
+   0% {
+      width: 0;
+   }
+   100% {
+      width: 100%;
+   }
+}
+
+@keyframes fadeOut {
+   0% {
+      border-right: 2px solid white;
+   }
+   99%, 100% {
+      border-right: 0px solid white;
+   }
+}
+
 .link,
 .description,
-.name,
 .icon,
 .toggle i {
    color: white;
