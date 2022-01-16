@@ -74,6 +74,20 @@ img {
    font-family: 'Merienda', cursive;
    font-weight: 400;
    text-align: center;
+   position: relative;
+   max-width: 95%;
+}
+
+.description span {
+   position: relative;
+   display: inline-block;
+   animation: MoveTop 4s ease-in-out infinite;
+   animation-delay: calc(0.1s * var(--i));
+   animation-play-state: paused;
+}
+
+.description:hover span {
+   animation-play-state: running;
 }
 
 /* self */

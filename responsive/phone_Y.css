@@ -11,6 +11,16 @@
       display: none !important;
    }
 
+   @keyframes MoveTop {
+      0%, 40%, 100% {
+         transform: translateY(0)
+      }
+      20% {
+         transform: translateY(-2vw);
+      }
+   }
+
+
    /* main */
 
    /* toggle */
@@ -37,7 +47,7 @@
    }
 
    .description {
-      font-size: 5vw;
+      font-size: 3.8vw;
    }
 
    /* self */
