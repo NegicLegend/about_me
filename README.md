@@ -2,7 +2,7 @@
 
 This website was built by me for introduce my self
 
-##links
+## links
 * [Idea of this website ](https://linktr.ee/)
 * [Animation of name tutorial](https://youtu.be/ccO2B40zkv4)
 * [Avatar's face tutorial](https://youtu.be/WqgKe3dcXxg)
