@@ -26,7 +26,18 @@ body {
 
 .name {
    color: #f1f2f6;
-   -webkit-text-stroke: 0.02vw #222f3e;
+}
+
+@media screen and (orientation:landscape) {
+   .name {
+      -webkit-text-stroke: 0.02vw #222f3e;
+   }
+}
+
+@media screen and (orientation:portrait) {
+   .name {
+      -webkit-text-stroke: 0.03vw #222f3e;
+   }
 }
 
 .name::before {

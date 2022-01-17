@@ -15,13 +15,13 @@
          changeThemeBtn.innerHTML = '<i class="icon fas fa-moon"></i>';
       }
 
-      (function() {
+      setTimeout(function() {
          document.getAnimations().forEach((anim) => {
             if(anim.animationName != 'MoveTop') {
                anim.cancel();
                anim.play();
             }
-         });
-      })()
+         }, 800);
+      })
    }
 })()
