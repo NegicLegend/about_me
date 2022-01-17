@@ -111,16 +111,12 @@
 
    /* clock */
    .footer-item.clock {
-      display: flex;
-      justify-content: end;
       padding-right: 2vw;
    }
 
    .footer-item.clock p {
-      color: white;
       font-size: 8vw;
       margin: 0 1vw;
-      font-family: 'Teko', sans-serif;
       font-weight: 500;
       line-height: 20vh;
    }
