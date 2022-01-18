@@ -16,6 +16,22 @@
       }
    }
 
+   body::-webkit-scrollbar {
+      width: 0.6vw;
+      cursor: pointer;
+   }
+    
+   body::-webkit-scrollbar-thumb {
+     background: #00a8ff;
+     border-top-left-radius: 100vw;
+     border-bottom-left-radius: 100vw;
+     filter: blur(0.3vw);
+   }
+
+   body::-webkit-scrollbar-thumb:hover {
+      background: #067ab9; 
+   }
+
    /* main */
 
    /* toggle */
