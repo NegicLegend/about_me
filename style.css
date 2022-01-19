@@ -41,10 +41,33 @@ img {
    justify-content: center;
    align-items: center;
    transition: 0.2s linear;
+   overflow: hidden;
+   position: relative;
+}
+
+.toggle::before {
+   content: "";
+   position: absolute;
+   top: var(--y);
+   left: var(--x);
+   width: 0;
+   height: 0;
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+   transition: height 0.35s linear, width 0.35s linear;
+}
+
+.toggle:hover::before {
+   width: 100vw;
+   height: 100vw;
 }
 
 .toggle:hover {
    opacity: 0.9;
+}
+
+.icon {
+   z-index: 40;
 }
 
 /* toggle */
@@ -183,6 +206,15 @@ img {
    align-items: center;
    transition: 0.2s linear;
    position: relative;
+   overflow: hidden;
+}
+
+.icon-link {
+   z-index: 100;
+}
+
+.icon-wrap.no-link {
+   z-index: 20;
 }
 
 .icon-wrap.no-link,
@@ -201,18 +233,12 @@ img {
    transition: 0.2s linear;
 }
 
-.icon-link:first-child {
-   margin-left: 4vw;
-}
-
-.icon-link:last-child {
-   margin-right: 4vw;
-}
-
+.icon-link:first-child,
 .icon-wrap.no-link:first-child {
    margin-left: 4vw;
 }
 
+.icon-link:last-child,
 .icon-wrap.no-link:last-child {
    margin-right: 4vw;
 }
@@ -222,7 +248,7 @@ img {
    font-family: 'Mochiy Pop P One', sans-serif;
    font-weight: 400;
    letter-spacing: 0.2vw;
-   padding: 1vw 15vw;
+   padding: 50vw;
    position: absolute;
    left: 50%;
    top: 50%;
@@ -230,6 +256,7 @@ img {
    transition: 0.2s linear;
    text-align: center;
    white-space: nowrap;
+   z-index: 40;
 }
 
 /* body *//* body *//* body *//* body *//* body *//* body *//* body *//* body */

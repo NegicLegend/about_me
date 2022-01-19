@@ -26,7 +26,7 @@ body {
    transition: 0.5s;
 }
 
-.toggle-volume:hover {
+.toggle-volume::before {
    background-color: #b33939;
 }
 
@@ -34,11 +34,11 @@ body {
    background-color: #b33939;
 }
 
-.toggle-volume.mute:hover {
+.toggle-volume.mute::before {
    background-color: #4cd137;
 }
 
-.toggle-theme:hover {
+.toggle-theme::before {
    background-color: #576574;
 }
 
