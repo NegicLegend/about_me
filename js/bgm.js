@@ -1,8 +1,8 @@
 const audio = document.getElementById('audio');
 const toggleVolume = document.querySelector('.toggle-volume');
-audio.volume = 0.2;
+audio.volume = 0.4;
 
-audio.addEventListener('ended', ()=> {audio.play()});
+audio.addEventListener('ended', ()=> audio.play());
 
 toggleVolume.onclick = function() {
    if(toggleVolume.classList.contains('active')) {

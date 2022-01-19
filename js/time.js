@@ -3,24 +3,18 @@ function clock() {
    const minute = document.getElementById('minute');
    const second = document.getElementById('second');
 
-   let h = new Date().getHours();
-   let m = new Date().getMinutes();
-   let s = new Date().getSeconds();
-
-   if(h < 10) {
-      h.toString()
-      h = '0' + h;
+   function zero(n) {
+      if(typeof(n) === 'string') {
+         if(n.length < 2) {
+            n = '0' + n;
+         }
+      }
+      return n;
    }
 
-   if(m < 10) {
-      m.toString()
-      m = '0' + m;
-   }
-
-   if(s < 10) {
-      s.toString()
-      s = '0' + s;
-   }
+   let h = zero(new Date().getHours().toString());
+   let m = zero(new Date().getMinutes().toString());
+   let s = zero(new Date().getSeconds().toString());
 
    hour.innerHTML = h;
    minute.innerHTML = m;
