@@ -5,17 +5,21 @@
    changeThemeBtn.onclick = function () {
       if (theme.href.indexOf('dark') > -1) {
          theme.href = './theme/light.css';
-            changeThemeBtn.innerHTML = '<i class="icon fas fa-sun"></i>';
+         changeThemeBtn.innerHTML = '<i class="icon fas fa-sun"></i>'; 
       } else if (theme.href.indexOf('light') > -1) {
          theme.href = './theme/dark.css';
-         changeThemeBtn.innerHTML = '<i class="icon fas fa-moon"></i>'
-      }else {
+         changeThemeBtn.innerHTML = '<i class="icon fas fa-moon"></i>';
+      } else {
          console.error('Something must be wrong!');
       }
 
-      if(anim.animationName != 'MoveTop') {
-         anim.cancel();
-         anim.play();
-      }
+      (function() {
+         document.getAnimations().forEach((anim) => {
+            if(anim.animationName != 'MoveTop') {
+               anim.cancel();
+               anim.play();
+            }
+         });
+      })()
    }
 })()
