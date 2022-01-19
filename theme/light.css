@@ -42,8 +42,18 @@ body {
    background-color: #576574;
 }
 
+.face {
+   background-color: #fbff03;
+   transition: 0.5;
+}
+
+.face::before {
+   background-color: #e08e00;
+}
+
 .name {
    color: #f1f2f6;
+   transition: 0.5s linear;
 }
 
 @media screen and (orientation:landscape) {

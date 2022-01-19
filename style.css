@@ -110,7 +110,6 @@ img {
    border-radius: 50%;
    position: relative;
    z-index: 100;
-   background-color: #ffcc03;
    display: none;
    justify-content: center;
    align-items: center;
@@ -126,7 +125,6 @@ img {
    top: 60%;
    width: 50%;
    height: 25%;
-   background-color: #b67604;
    border-bottom-left-radius: 1000vw;
    border-bottom-right-radius: 1000vw;
    left: 25%;
