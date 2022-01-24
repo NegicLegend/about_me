@@ -1135,6 +1135,148 @@ body {
 }
 /* codepen */
 
+/* dev */
+.link-wrap.dev:hover {
+   border: 0.2rem solid black;
+}
+
+.link-wrap.dev:hover .icon {
+   color: black;
+}
+
+.link-wrap.dev:hover .link {
+   color: black;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+
+.link-wrap.dev:hover .icon-link {
+   transform: scale(0.75);
+}
+
+.link-wrap.dev:hover .icon-link::before {
+   border-left: 4px solid black;
+   border-right: 4px solid black;
+}
+
+.link-wrap.dev:hover .icon-link::after {
+   border-top: 4px solid black;
+   border-bottom: 4px solid black;
+}
+
+@media screen and (orientation:portrait) and (min-width: 1100px) {
+   /* desktop Y */
+   .link-wrap.dev:hover .icon-link::before {
+      border-left: 4px solid black;
+      border-right: 4px solid black;
+   }
+   
+   .link-wrap.dev:hover .icon-link::after {
+      border-top: 4px solid black;
+      border-bottom: 4px solid black;
+   }
+   /* desktop Y */
+}
+
+@media screen and (orientation:portrait) and (min-width: 550px) and (max-width: 1099px) {
+   /* tablet Y */
+   .link-wrap.dev:hover .icon-link::before {
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+   }
+   
+   .link-wrap.dev:hover .icon-link::after {
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+   }
+   /* tablet Y */
+}
+
+@media screen and (orientation:portrait) and (max-width: 549px) {
+   /* phone Y */
+   .link-wrap.dev:hover .icon-link::before {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+   }
+   
+   .link-wrap.dev:hover .icon-link::after {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+   }
+   /* phone Y */
+}
+
+@media screen and (orientation:landscape) and (min-width: 2500px) {
+   /* super desktop X */
+   .link-wrap.dev:hover .icon-link::before {
+      border-left: 8px solid black;
+      border-right: 8px solid black;
+   }
+   
+   .link-wrap.dev:hover .icon-link::after {
+      border-top: 8px solid black;
+      border-bottom: 8px solid black;
+   }
+   /* super desktop X */
+}
+
+@media screen and (orientation:landscape) and (min-width: 1800px) and (max-width: 2499px) {
+   /* desktop X */
+   .link-wrap.dev:hover .icon-link::before {
+      border-left: 6px solid black;
+      border-right: 6px solid black;
+   }
+   
+   .link-wrap.dev:hover .icon-link::after {
+      border-top: 6px solid black;
+      border-bottom: 6px solid black;
+   }
+   /* desktop X */
+}
+
+@media screen and (orientation:landscape) and (min-width: 1100px) and (max-width: 1799px) and (max-height: 999px) {
+   /* laptop X */
+   .link-wrap.dev:hover .icon-link::before {
+      border-left: 4px solid black;
+      border-right: 4px solid black;
+   }
+   
+   .link-wrap.dev:hover .icon-link::after {
+      border-top: 4px solid black;
+      border-bottom: 4px solid black;
+   }
+   /* laptop X */
+}
+
+@media screen and (orientation:landscape) and (min-height: 550px) and (max-height: 1099px) and (max-width: 1099px) {
+   /* tablet X */
+   .link-wrap.dev:hover .icon-link::before {
+      border-left: 4px solid black;
+      border-right: 4px solid black;
+   }
+   
+   .link-wrap.dev:hover .icon-link::after {
+      border-top: 4px solid black;
+      border-bottom: 4px solid black;
+   }
+   /* tablet X */
+}
+
+@media screen and (orientation:landscape) and (max-height: 549px) and (max-width: 1099px) {
+   /* phone X */
+   .link-wrap.dev:hover .icon-link::before {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+   }
+   
+   .link-wrap.dev:hover .icon-link::after {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+   }
+   /* phone X */
+}
+/* dev */
+
 /* reddit */
 .link-wrap.reddit:hover {
    border: 0.2rem solid #ff4500;

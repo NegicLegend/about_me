@@ -314,6 +314,35 @@ body {
 }
 /* codepen */
 
+/* dev */
+.link-wrap.dev:hover {
+   border: 0.2rem solid #ffffff;
+   box-shadow: 0 0 4rem 1rem #ffffff;
+}
+
+.link-wrap.dev:hover .icon-wrap {
+   border: 0.2rem solid #ffffff;
+}
+
+.link-wrap.dev:hover .icon {
+   color: #ffffff;
+}
+
+.link-wrap.dev:hover .icon-link:first-child {
+   transform: translateX(5vw);
+}
+
+.link-wrap.dev:hover .icon-link:last-child {
+   transform: translateX(-5vw);
+}
+
+.link-wrap.dev:hover .link {
+   color: #ffffff;
+   letter-spacing: 1vw;
+   transform: translate(calc(-50% + 1vw), -50%);
+}
+/* dev */
+
 /* reddit */
 .link-wrap.reddit:hover {
    border: 0.2rem solid #ff4500;
