@@ -12,7 +12,7 @@
 }
 
 img {
-   user-select: none;
+   user-select: none !important;
 }
 
 /* main *//* main *//* main *//* main *//* main *//* main *//* main *//* main */
@@ -118,6 +118,7 @@ img {
    animation: MoveTop 4s ease-in-out infinite;
    animation-delay: calc(0.1s * var(--i));
    animation-play-state: paused;
+   user-select: none !important;
 }
 
 .description:hover span {
