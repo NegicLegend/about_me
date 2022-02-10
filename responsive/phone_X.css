@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @media screen and (orientation:landscape) and (max-height: 549px) and (max-width: 1099px) {
    html {
       font-size: 5px;
@@ -7,12 +14,25 @@
       margin-bottom: 1vw;
    }
 
-   @keyframes MoveTop {
+   @-webkit-keyframes MoveTop {
       0%, 40%, 100% {
-         transform: translateY(0)
+         -webkit-transform: translateY(0);
+                 transform: translateY(0)
       }
       20% {
-         transform: translateY(-2vw);
+         -webkit-transform: translateY(-2vw);
+                 transform: translateY(-2vw);
+      }
+   }
+
+   @keyframes MoveTop {
+      0%, 40%, 100% {
+         -webkit-transform: translateY(0);
+                 transform: translateY(0)
+      }
+      20% {
+         -webkit-transform: translateY(-2vw);
+                 transform: translateY(-2vw);
       }
    }
 

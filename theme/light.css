@@ -1,28 +1,42 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 body {
    background-color: #f1f2f6;
+   -webkit-transition: 0.5s;
+   -o-transition: 0.5s;
    transition: 0.5s;
 }
 
 @media screen and (orientation:landscape) and (min-width: 2500px) {
    body::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 0.1vw 0.05vw #222f3e;
+      -webkit-box-shadow: inset 0 0 0.1vw 0.05vw #222f3e;
+              box-shadow: inset 0 0 0.1vw 0.05vw #222f3e;
    }
 }
 
 @media screen and (orientation:landscape) and (min-width: 1800px) and (max-width: 2499px) {
    body::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 0.1vw 0.05vw #222f3e;
+      -webkit-box-shadow: inset 0 0 0.1vw 0.05vw #222f3e;
+              box-shadow: inset 0 0 0.1vw 0.05vw #222f3e;
    }
 }
 
 @media screen and (orientation:landscape) and (min-width: 1100px) and (max-width: 1799px) {
    body::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 0.1vw 0.05vw #222f3e;
+      -webkit-box-shadow: inset 0 0 0.1vw 0.05vw #222f3e;
+              box-shadow: inset 0 0 0.1vw 0.05vw #222f3e;
    }
 }
 
 .toggle {
    border: 1px solid #222f3e;
+   -webkit-transition: 0.5s;
+   -o-transition: 0.5s;
    transition: 0.5s;
 }
 
@@ -44,6 +58,8 @@ body {
 
 .face {
    background-color: #fbff03;
+   -webkit-transition: 0.5;
+   -o-transition: 0.5;
    transition: 0.5;
 }
 
@@ -71,7 +87,17 @@ body {
    color: #222f3e;
    border-right: 2px solid #222f3e;
    -webkit-text-stroke: 0vw #222f3e;
-   animation: grow 6s linear forwards, fadeOut 6s linear forwards;
+   -webkit-animation: grow 6s linear forwards, fadeOut 6s linear forwards;
+           animation: grow 6s linear forwards, fadeOut 6s linear forwards;
+}
+
+@-webkit-keyframes grow {
+   0% {
+      width: 0;
+   }
+   100% {
+      width: 100%;
+   }
 }
 
 @keyframes grow {
@@ -80,6 +106,15 @@ body {
    }
    100% {
       width: 100%;
+   }
+}
+
+@-webkit-keyframes fadeOut {
+   0% {
+      border-right: 2px solid #222f3e;
+   }
+   99%, 100% {
+      border-right: 0px solid #222f3e;
    }
 }
 
@@ -97,21 +132,31 @@ body {
 .icon,
 .toggle i {
    color: #222f3e;
+   -webkit-transition: 0.5s;
+   -o-transition: 0.5s;
    transition: 0.5s;
 }
 
 .avt,
 .link-wrap {
    border: 0.2rem solid #222f3e;
+   -webkit-transition: 0.5s;
+   -o-transition: 0.5s;
    transition: 0.5s;
 }
 
 .icon-link,
 .icon-wrap.no-link {
    position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: center;
-   align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
 }
 
 .icon-link::before,
@@ -124,17 +169,23 @@ body {
    height: 100%;
    left: 0;
    top: 0;
+   -webkit-transition: 0.3s linear;
+   -o-transition: 0.3s linear;
    transition: 0.3s linear;
 }
 
 .link-wrap:hover .icon-link::before,
 .link-wrap:hover .icon-wrap.no-link::before {
-   transform: skewX(25deg);
+   -webkit-transform: skewX(25deg);
+       -ms-transform: skewX(25deg);
+           transform: skewX(25deg);
 }
 
 .link-wrap:hover .icon-link::after,
 .link-wrap:hover .icon-wrap.no-link::after {
-   transform: skewY(-25deg);
+   -webkit-transform: skewY(-25deg);
+       -ms-transform: skewY(-25deg);
+           transform: skewY(-25deg);
 }
 
 /* main */
@@ -153,11 +204,15 @@ body {
 .link-wrap.facebook:hover .link {
    color: #2374e1;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.facebook:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.facebook:hover .icon-link::before {
@@ -295,11 +350,15 @@ body {
 .link-wrap.github:hover .link {
    color: #812790;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.github:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.github:hover .icon-link::before {
@@ -437,11 +496,15 @@ body {
 .link-wrap.youtube:hover .link {
    color: #ff0000;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.youtube:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.youtube:hover .icon-link::before {
@@ -579,11 +642,15 @@ body {
 .link-wrap.twitter:hover .link {
    color: #1d9bf0;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.twitter:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.twitter:hover .icon-link::before {
@@ -721,11 +788,15 @@ body {
 .link-wrap.twitch:hover .link {
    color: #9146ff;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.twitch:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.twitch:hover .icon-link::before {
@@ -863,11 +934,15 @@ body {
 .link-wrap.cssbattle:hover .link {
    color: #ffdf00;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.cssbattle:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.cssbattle:hover .icon-link::before {
@@ -1005,11 +1080,15 @@ body {
 .link-wrap.codepen:hover .link {
    color: black;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.codepen:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.codepen:hover .icon-link::before {
@@ -1147,11 +1226,15 @@ body {
 .link-wrap.dev:hover .link {
    color: black;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.dev:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.dev:hover .icon-link::before {
@@ -1289,11 +1372,15 @@ body {
 .link-wrap.reddit:hover .link {
    color: #ff4500;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.reddit:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.reddit:hover .icon-link::before {
@@ -1431,11 +1518,15 @@ body {
 .link-wrap.pinterest:hover .link {
    color: #e60023;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.pinterest:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.pinterest:hover .icon-link::before {
@@ -1573,11 +1664,15 @@ body {
 .link-wrap.steam:hover .link {
    color: #003a5f;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.steam:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.steam:hover .icon-link::before {
@@ -1715,11 +1810,15 @@ body {
 .link-wrap.email:hover .link {
    color: #dca505;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.email:hover .icon-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.email:hover .icon-link::before {
@@ -1857,11 +1956,15 @@ body {
 .link-wrap.phone:hover .link {
    color: #6bf268;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.phone:hover .icon-wrap.no-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.phone:hover .icon-wrap.no-link::before {
@@ -1999,11 +2102,15 @@ body {
 .link-wrap.rick:hover .link {
    color: #ff6b81;
    letter-spacing: 1vw;
-   transform: translate(calc(-50% + 1vw), -50%);
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
 }
 
 .link-wrap.rick:hover .icon-wrap.no-link {
-   transform: scale(0.75);
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
 }
 
 .link-wrap.rick:hover .icon-wrap.no-link::before {
