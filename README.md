@@ -9,3 +9,4 @@ This website was built by me for introduce my self
 * [Description text hover animation tutorial](https://youtu.be/78SGNoUgqRs)
 * [Icon link hover effect in light theme tutorial](https://youtu.be/429uihNI45k)
 * [Toggle button hover effect tutorial](https://youtu.be/WOSaNbpHNqU)
+* [My avatar image source](https://www.pixiv.net/en/artworks/84249150)
