@@ -12,4 +12,5 @@ function eyeballs() {
 
 document.querySelector('.avt').addEventListener('click', function() {
    document.querySelector('.avt').classList.toggle('active');
+   console.log('click');
 })
