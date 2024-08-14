@@ -132,6 +132,42 @@ body {
 
 /* link *//* link *//* link *//* link *//* link */
 
+/* anime list */
+.link-wrap.anime-list:hover {
+   border: 0.2rem solid #00b894;
+   -webkit-box-shadow: 0 0 4rem 1rem #00b894;
+           box-shadow: 0 0 4rem 1rem #00b894;
+}
+
+.link-wrap.anime-list:hover .icon-wrap {
+   border: 0.2rem solid #00b894;
+}
+
+.link-wrap.anime-list:hover .icon {
+   color: #00b894;
+}
+
+.link-wrap.anime-list:hover .icon-link:first-child {
+   -webkit-transform: translateX(5vw);
+       -ms-transform: translateX(5vw);
+           transform: translateX(5vw);
+}
+
+.link-wrap.anime-list:hover .icon-link:last-child {
+   -webkit-transform: translateX(-5vw);
+       -ms-transform: translateX(-5vw);
+           transform: translateX(-5vw);
+}
+
+.link-wrap.anime-list:hover .link {
+   color: #00b894;
+   letter-spacing: 1vw;
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
+}
+/* anime list */
+
 /* facebook */
 .link-wrap.facebook:hover {
    border: 0.2rem solid #2374e1;

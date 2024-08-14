@@ -192,6 +192,152 @@ body {
 
 /* link */
 
+/* anime list */
+.link-wrap.anime-list:hover {
+   border: 0.2rem solid #00b894;
+}
+
+.link-wrap.anime-list:hover .icon {
+   color: #00b894;
+}
+
+.link-wrap.anime-list:hover .link {
+   color: #00b894;
+   letter-spacing: 1vw;
+   -webkit-transform: translate(calc(-50% + 1vw), -50%);
+       -ms-transform: translate(calc(-50% + 1vw), -50%);
+           transform: translate(calc(-50% + 1vw), -50%);
+}
+
+.link-wrap.anime-list:hover .icon-link {
+   -webkit-transform: scale(0.75);
+       -ms-transform: scale(0.75);
+           transform: scale(0.75);
+}
+
+.link-wrap.anime-list:hover .icon-link::before {
+   border-left: 4px solid #00b894;
+   border-right: 4px solid #00b894;
+}
+
+.link-wrap.anime-list:hover .icon-link::after {
+   border-top: 4px solid #00b894;
+   border-bottom: 4px solid #00b894;
+}
+
+@media screen and (orientation:portrait) and (min-width: 1100px) {
+   /* desktop Y */
+   .link-wrap.anime-list:hover .icon-link::before {
+      border-left: 4px solid #00b894;
+      border-right: 4px solid #00b894;
+   }
+   
+   .link-wrap.anime-list:hover .icon-link::after {
+      border-top: 4px solid #00b894;
+      border-bottom: 4px solid #00b894;
+   }
+   /* desktop Y */
+}
+
+@media screen and (orientation:portrait) and (min-width: 550px) and (max-width: 1099px) {
+   /* tablet Y */
+   .link-wrap.anime-list:hover .icon-link::before {
+      border-left: 2px solid #00b894;
+      border-right: 2px solid #00b894;
+   }
+   
+   .link-wrap.anime-list:hover .icon-link::after {
+      border-top: 2px solid #00b894;
+      border-bottom: 2px solid #00b894;
+   }
+   /* tablet Y */
+}
+
+@media screen and (orientation:portrait) and (max-width: 549px) {
+   /* phone Y */
+   .link-wrap.anime-list:hover .icon-link::before {
+      border-left: 1px solid #00b894;
+      border-right: 1px solid #00b894;
+   }
+   
+   .link-wrap.anime-list:hover .icon-link::after {
+      border-top: 1px solid #00b894;
+      border-bottom: 1px solid #00b894;
+   }
+   /* phone Y */
+}
+
+@media screen and (orientation:landscape) and (min-width: 2500px) {
+   /* super desktop X */
+   .link-wrap.anime-list:hover .icon-link::before {
+      border-left: 8px solid #00b894;
+      border-right: 8px solid #00b894;
+   }
+   
+   .link-wrap.anime-list:hover .icon-link::after {
+      border-top: 8px solid #00b894;
+      border-bottom: 8px solid #00b894;
+   }
+   /* super desktop X */
+}
+
+@media screen and (orientation:landscape) and (min-width: 1800px) and (max-width: 2499px) {
+   /* desktop X */
+   .link-wrap.anime-list:hover .icon-link::before {
+      border-left: 6px solid #00b894;
+      border-right: 6px solid #00b894;
+   }
+   
+   .link-wrap.anime-list:hover .icon-link::after {
+      border-top: 6px solid #00b894;
+      border-bottom: 6px solid #00b894;
+   }
+   /* desktop X */
+}
+
+@media screen and (orientation:landscape) and (min-width: 1100px) and (max-width: 1799px) and (max-height: 999px) {
+   /* laptop X */
+   .link-wrap.anime-list:hover .icon-link::before {
+      border-left: 4px solid #00b894;
+      border-right: 4px solid #00b894;
+   }
+   
+   .link-wrap.anime-list:hover .icon-link::after {
+      border-top: 4px solid #00b894;
+      border-bottom: 4px solid #00b894;
+   }
+   /* laptop X */
+}
+
+@media screen and (orientation:landscape) and (min-height: 550px) and (max-height: 1099px) and (max-width: 1099px) {
+   /* tablet X */
+   .link-wrap.anime-list:hover .icon-link::before {
+      border-left: 4px solid #00b894;
+      border-right: 4px solid #00b894;
+   }
+   
+   .link-wrap.anime-list:hover .icon-link::after {
+      border-top: 4px solid #00b894;
+      border-bottom: 4px solid #00b894;
+   }
+   /* tablet X */
+}
+
+@media screen and (orientation:landscape) and (max-height: 549px) and (max-width: 1099px) {
+   /* phone X */
+   .link-wrap.anime-list:hover .icon-link::before {
+      border-left: 1px solid #00b894;
+      border-right: 1px solid #00b894;
+   }
+   
+   .link-wrap.anime-list:hover .icon-link::after {
+      border-top: 1px solid #00b894;
+      border-bottom: 1px solid #00b894;
+   }
+   /* phone X */
+}
+/* anime list */
+
 /* facebook */
 .link-wrap.facebook:hover {
    border: 0.2rem solid #2374e1;
